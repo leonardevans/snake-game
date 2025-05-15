@@ -43,6 +43,28 @@
       style="border:2px solid black"
     ></canvas>
 
+    <div id="promo-ad" class="promo-ad hidden">
+      <div class="promo-user">
+        <span class="promo-user-details">
+          <img  id="promo-user-profile-pic" style="width: 30px; height: 30px; border-radius: 50%;" src="" alt=""/>
+        
+        <!-- <span id="promo-user-name"></span> -->
+          <span>@<span id="promo-user-username"></span></span>
+          <span id="promo-user-status" class="hidden"> <img style="max-width: 15px; max-height: 15px;" src="/images/blue-check-badge.png" alt="user account status icon"/>
+          </span>
+          <span style="color: blue;">AD</span>
+        </span>
+        <button class="close-btn" type="button" onclick="document.getElementById('promo-ad').classList.add('hidden')">X</button>
+  
+      </div>
+      <div class="promo-content">
+        <img id="promo-banner" class="promo-banner" alt="Promo Banner">
+        <div class="promo-text">
+        <h3 id="promo-title"></h3>
+        <p id="promo-details"></p>
+        </div>
+      </div>
+    </div>
     <script src="./snake.js"></script>
     <script src="./promo.js"></script>
   </body>
